@@ -47,8 +47,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tjbotdatabase')
 # LOG CHANNELS *
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001786924542'))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', 0))
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001786924542'))
-PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', '-1001786924542'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '0'))
+PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', '0'))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '').split()]
@@ -61,13 +61,13 @@ QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1
 UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
 
 # Others
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/real_MoviesAdda3/186') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Download_Movie_Video/3') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'teekam_jaat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adda™](https://t.me/real_MoviesAdda3)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [TJ MOVIE](https://t.me/+WUxToIDu24liMjVl)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌🎁Support: @LazyDeveloper 🎁\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -76,7 +76,7 @@ MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
-PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
+PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 #LazyRenamer Configs
@@ -84,11 +84,11 @@ FLOOD = int(environ.get("FLOOD", "10"))
 LAZY_MODE = bool(environ.get("LAZY_MODE")) #make it true to enable file renaming feature in bot
 
 # Requested Content template variables --- 
-ADMIN_USRNM = environ.get('ADMIN_USRNM','LazyDeveloperr') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','LazyDeveloper') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LazyDeveloper') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  add only handle - don't add full url  ] 
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+tl1Ll8L8TbQwMjdl") #[ without @ ]
+ADMIN_USRNM = environ.get('ADMIN_USRNM','teekam_jaat') # WITHOUT @
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','+WUxToIDu24liMjVl') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','+WUxToIDu24liMjVl') # WITHOUT @
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','tjmovie1')  # WITHOUT @ [  add only handle - don't add full url  ] 
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+sBQBAjfyKqM5YWY1") #[ without @ ]
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
@@ -169,7 +169,7 @@ DISCUSSION_CHAT_USRNM = "Discusss_Here" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/real_MoviesAdda3"
+DOWNLOAD_TEXT_URL = "https://t.me/How_To_Download_Movie_Video/3"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
